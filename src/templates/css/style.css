@@ -140,3 +140,23 @@ div#decoded-inputs{
 input#toggle-1[type=checkbox]:checked ~ div#decoded-inputs {
     display: block;
 }
+
+
+.navbar-inverse {
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  background: #000;
+}
+
+.navbar-inverse .navbar-brand {
+  cursor: pointer;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  background: inherit;
+  color: #ccc;
+}
