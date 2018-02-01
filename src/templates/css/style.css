@@ -34,22 +34,22 @@ td {
 
 a:link {
     text-decoration: none;
-    color: #7352ef;
+    color: #878de8;
 }
 
 a:visited {
     text-decoration: none;
-    color: #7352ef;
+    color: #878de8;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #7352ef;
+    color: #878de8;
 }
 
 a:active {
     text-decoration: none;
-    color: #7352ef;
+    color: #878de8;
 }
 
 form {
@@ -81,7 +81,7 @@ form {
 }
 
 .tab label {
-    background: black;
+    background: #fff;
     padding: 10px;
     border: 1px solid #ccc;
     margin-left: -1px;
@@ -97,7 +97,7 @@ form {
     position: absolute;
     top: 28px;
     left: 0;
-    background: black;
+    background: #fff;
     right: 0;
     bottom: 0;
     padding: 20px;
@@ -105,7 +105,7 @@ form {
 }
 
 [type=radio]:checked ~ label {
-    background: #505050 ;
+    background: #ccc ;
     border-bottom: 1px solid white;
     z-index: 2;
 }
