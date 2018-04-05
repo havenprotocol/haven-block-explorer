@@ -5091,6 +5091,43 @@ namespace xmreg
             return j_response;
         }
 
+        json
+        json_emission_circulating()
+        {
+
+            // get basic network info
+            if (!CurrentBlockchainStatus::is_thread_running())
+            {
+                return {"status", "fail"};
+            }
+            else
+            {
+                CurrentBlockchainStatus::Emission current_values
+                        = CurrentBlockchainStatus::get_emission();
+
+                return get_xmr(current_values.coinbase);
+            }
+
+        }
+
+        json
+        json_emission_circulating_nodec()
+        {
+
+            // get basic network info
+            if (!CurrentBlockchainStatus::is_thread_running())
+            {
+                return {"status", "fail"};
+            }
+            else
+            {
+                CurrentBlockchainStatus::Emission current_values
+                        = CurrentBlockchainStatus::get_emission();
+
+              return current_values.coinbase;
+            }
+        }
+
 
         /*
               * Lets use this json api convention for success and error
